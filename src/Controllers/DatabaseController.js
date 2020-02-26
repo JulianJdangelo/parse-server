@@ -1883,9 +1883,9 @@ class DatabaseController {
       VolatileClassesSchemas: SchemaController.VolatileClassesSchemas,
     });
     return Promise.all([
-      usernameUniqueness,
+      //usernameUniqueness, // IMPORTANT: disabled to support Cosmos DB
       usernameCaseInsensitiveIndex,
-      emailUniqueness,
+      //emailUniqueness, // IMPORTANT: disabled to support Cosmos DB
       emailCaseInsensitiveIndex,
       roleUniqueness,
       adapterInit,
